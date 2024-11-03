@@ -1,0 +1,26 @@
+/* global styles  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* task 1 (float) */
+section {
+    height: 700px;
+}
+.float-one, .float-two, .float-three {
+    border: 3px solid #000;
+}
+.float-one {
+    background-color: lightblue;
+    height: 20%;
+}
+.float-two {
+    background-color: #eee;
+    height: 70%;
+}
+.float-three {
+    background-color: lightpink;
+    height: 10%;
+}

@@ -1,0 +1,59 @@
+/* global styles  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* task 2 (float) */
+section {
+    height: 700px;
+    padding: 10px;
+}
+.float-header {
+    background-color: lightblue;
+    height: 20%;
+    border: 2px solid black;
+}
+.float-main {
+    width: 80%;
+    height: 69%;
+    float: left; 
+}
+
+.float-main .upper-left {
+    background-color: burlywood;
+    border: 2px solid black;
+    width: 49%;
+    height: 79%;
+    float: left;
+    margin-right: 2%;
+}
+.float-main .upper-right {
+    background-color: burlywood;
+    border: 2px solid black;
+    width: 49%;
+    height: 79%;
+    float: left;
+}
+
+.float-main .lower {
+    background-color: gray;
+    border: 2px solid black;
+    height: 20%;
+    clear: both;
+}
+
+.float-aside {
+    float: right;
+    border: 2px solid black;
+    background-color: yellow;
+    width: 19%;
+    height: 70%;
+}
+.float-footer {
+    background-color: pink;
+    height: 10%;
+    border: 2px solid black;
+    clear: both;
+}

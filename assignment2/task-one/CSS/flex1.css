@@ -1,0 +1,30 @@
+/* global styles  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* task 1 (flex) */
+
+.flexbox-container {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+}
+
+.flex-one, .flex-two, .flex-three {
+    border: 3px solid #000;
+}
+.flex-one {
+    background-color: lightgreen;
+    height: 20%;
+}
+.flex-two {
+    background-color: lavender;
+    height: 70%;
+}
+.flex-three {
+    background-color: lightgray;
+    height: 10%;
+}

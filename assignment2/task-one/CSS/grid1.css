@@ -1,0 +1,33 @@
+/* global styles  */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* task 1 (grid) */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 5fr 1fr;
+    height: 650px;
+}
+
+.grid-one, .grid-two, .grid-three {
+    border: 3px solid #000;
+}
+.grid-one {
+    background-color: darkblue;
+}
+.grid-two {
+    background-color: lightskyblue;
+}
+.grid-three {
+    background-color: lightcyan;
+}
+
+
+
+
+

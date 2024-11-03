@@ -1,0 +1,118 @@
+/* Global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* section style */
+.float-container {
+    padding: 10px;
+}
+.float-container header {
+    padding: 20px;
+    background-color: pink;
+    color: palevioletred;
+    text-align: center;
+}
+
+/* left column */
+.left-div {
+    float: left;
+    width: 20%;
+}
+.left-div li {
+    background-color: pink;
+    padding: 10px 30px;
+    margin: 5px 0;
+    color: black;
+}
+.left-div li a {
+    color: black;
+}
+
+/* right column */
+.right-div {
+    float: left;
+    width: 55%;
+    padding: 25px;
+    color: pink;
+}
+
+/* aside */
+aside {
+    float: right;
+    width: 20%;
+    margin: 5px 0;
+    padding: 30px;
+    background: pink;
+    color: palevioletred;
+}
+aside p {
+    padding: 20px 0;
+}
+
+/* clear floats */
+.float-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* footer */
+footer {
+    background-color: pink;
+    color: palevioletred;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+}
+
+/* Responsive Design */
+
+/* tablets */
+@media (max-width: 992px) { 
+    .left-div, .right-div, aside {
+        width: 100%; 
+        float: none;
+    }
+    .right-div {
+        padding: 15px;
+    }
+    aside {
+        padding: 15px;
+    }
+}
+
+/* large mobile */
+@media (max-width: 768px) { 
+    .float-container header {
+        padding: 15px;
+    }
+    .left-div li {
+        padding: 10px;
+    }
+    .right-div {
+        padding: 10px;
+    }
+    aside {
+        padding: 10px;
+    }
+}
+
+/* small mobile */
+
+@media (max-width: 576px) { 
+    .float-container {
+        padding: 5px;
+    }
+    .float-container header {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+    .left-div li {
+        padding: 8px;
+    }
+}

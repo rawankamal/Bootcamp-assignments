@@ -1,0 +1,127 @@
+/* global styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* task 2 (grid) */
+.grid-section {
+    display: grid;
+    grid-template-rows: 20% 65% 10%;
+    grid-template-columns: 1fr;
+    height: 700px;
+    padding: 10px;
+    gap: 10px;
+}
+
+/* 1. header */
+.grid-header {
+    background-color: lightblue;
+    border: 2px solid black;
+}
+
+/* 2. main */
+.grid-main {
+    display: grid;
+    grid-template-columns: 70% 29%;
+    gap: 10px;
+}
+
+.left-wrapper {
+    display: grid;
+    grid-template-rows: 60% 38%;
+    gap: 10px;
+}
+
+.upper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.upper .left-upper {
+    background-color: burlywood; 
+    border: 2px solid black;
+}
+
+.upper .right-upper {
+    background-color: burlywood;
+    border: 2px solid black;
+}
+
+.lower {
+    background-color: gray;
+    border: 2px solid black;
+}
+
+.grid-aside {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+/* 3. footer */
+.grid-footer {
+    background-color: pink;
+    border: 2px solid black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-rows: 15% 75% 10%;
+        height: 100vh;
+    }
+
+    .grid-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .left-wrapper {
+        grid-template-rows: 60% 40%;
+    }
+
+    .upper {
+        grid-template-columns: 1fr;
+    }
+
+    .upper .left-upper,
+    .upper .right-upper {
+        margin-bottom: 10px;
+    }
+
+    .grid-aside {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-section {
+        padding: 5px;
+    }
+
+    .grid-header {
+        height: 12%;
+    }
+
+    .grid-main {
+        height: 78%;
+    }
+
+    .upper {
+        grid-template-rows: 50% 50%;
+    }
+
+    .lower {
+        height: auto;
+    }
+
+    .grid-aside {
+        height: auto;
+    }
+
+    .grid-footer {
+        height: 10%;
+    }
+}

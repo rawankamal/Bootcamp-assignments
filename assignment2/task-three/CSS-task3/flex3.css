@@ -1,0 +1,84 @@
+:root {
+    --light-purple : #e1bee7;
+    --dark-purple : #6a1b9a;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* flex container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.flex-container header {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    text-align: center;
+}
+
+/* left column */
+.left-div {
+    flex: 1 1 20%;
+    background-color: var(--light-purple);
+    color: black;
+    margin: 10px 0;
+}
+
+.left-div li {
+    padding: 10px 30px;
+    margin: 5px 0;
+}
+.left-div li a {
+    color: black;
+}
+
+/* right column */
+.right-div {
+    flex: 1 1 55%;
+    padding: 25px;
+    color: var(--dark-purple);
+}
+
+/* aside */
+aside {
+    flex: 1 1 20%;
+    padding: 30px;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    margin: 5px 0;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* tablets */
+@media (max-width: 992px) {
+    .left-div, .right-div, aside {
+        flex: 1 1 100%;
+    }
+}
+
+/* small mobile */
+@media (max-width: 576px) {
+    .flex-container {
+        padding: 5px;
+    }
+    .flex-container header,
+    footer {
+        padding: 10px;
+    }
+}
