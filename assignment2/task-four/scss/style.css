@@ -130,7 +130,7 @@ ul .orange {
   margin: 50px auto;
 }
 .container-three .card-wrapper .inside-card {
-  background-image: url(/task-four/assest/bg2.jpg);
+  background-image: url(../assest/bg2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;

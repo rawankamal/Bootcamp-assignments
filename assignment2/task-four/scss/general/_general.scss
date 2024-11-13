@@ -142,7 +142,7 @@ ul {
         margin: 50px auto;
 
         .inside-card {
-            background-image: url(/task-four/assest/bg2.jpg);
+            background-image: url(assest/bg2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             border-radius: 10px;
@@ -233,17 +233,17 @@ ul {
     .container-six {
         .cards-holder2 {
             .flex-card {
-                flex-basis: 100% !important; // Make card full width
-                width: 100%; // Set width to 100% for full responsiveness
-                flex-direction: column; // Stack content vertically for better readability
+                flex-basis: 100% !important; 
+                width: 100%; 
+                flex-direction: column; 
 
                 img {
-                    width: 100%; // Make image full width
-                    border-radius: 5px 5px 0 0; // Adjust border-radius for top corners
+                    width: 100%; 
+                    border-radius: 5px 5px 0 0; 
                 }
 
                 .float-right {
-                    border-radius: 0 0 5px 5px !important; // Adjust border-radius for bottom corners
+                    border-radius: 0 0 5px 5px !important;
                 }
             }
         }
