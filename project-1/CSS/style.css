@@ -1,0 +1,180 @@
+/* Global Styles */
+:root {
+    --primary-color : #5271FF;
+    --secondary-color : #292929;
+    --white : #fff;
+    --white-sh1 : #FAFAFA;
+    --black : #000;
+    --border-color : #ddd;
+    --light-gray : #DCDCDC;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-size: 16px;
+    font-family: "Jost", sans-serif;
+}
+
+/* own style */
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+.large-text {
+    font-size: 2rem !important;
+}
+@media (min-width: 992px) {
+    .large-text {
+        font-size: 6rem !important;
+    }
+}
+.big-text {
+    font-size: 3rem !important;
+    justify-content:stretch;
+}
+
+
+/* override bootstrap */
+.text-primary {
+    color: var(--primary-color);
+}
+.btn-dark{
+    background-color: var(--secondary-color) !important;
+}
+.btn-primary{
+    background-color: var(--primary-color) !important;
+}
+.row {
+    /* --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 0; */
+    margin: 0;
+}
+
+
+
+/* STYLES */
+
+/* left side style start */
+.aside-container {
+    padding: 40px;
+    background-color: var(--white-sh1);
+}
+.hand-icon {
+    color: rgb(255, 177, 22);
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    align-self: self-end;
+}
+.aside-upper-container .social i {
+    color: var(--primary-color) ;
+    background-color: var(--white-sh1) ;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+}
+
+.divider {
+    border: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+.aside-nav li{
+    color: var(--black);
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: var(--white-sh1);
+    
+}
+
+.aside-nav li a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--black);
+}
+
+.aside-nav li:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+.aside-nav li:hover a{
+    color: var(--white);
+}
+.aside-nav li i {
+    margin-right: 10px;
+}
+/* end left side style */
+
+/* ***************************************** */
+
+/* about style started */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0;
+}
+
+.numbers li p {
+    padding: 15px;
+}
+.numbers li .number{
+    font-size: 4rem;
+}
+/* about style ends */
+
+/* services style starts*/
+span {
+    border: 2px solid var(--primary-color);
+    margin-right: 5px;
+}
+.thin-span {
+    border: 1px solid var(--primary-color);
+    margin: 0;
+}
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.title p {
+    flex-basis: 65%;
+    font-size: 1.1rem;
+}
+.title button {
+    align-self: center;
+}
+.title .text {
+    flex-basis: 50%;
+}
+
+.card-container {
+    background-color: transparent;
+}
+.card {
+    background-color: var(--white-sh1);
+}
+/* projects */
+.projects .title-dark-bg {
+    background-image: url(../assets/images/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 15px;
+}
+.blog img , .projects img{
+    width: 100%;
+}
+.form-container {
+    border-radius: 3rem;
+}
